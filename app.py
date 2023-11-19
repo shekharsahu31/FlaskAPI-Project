@@ -67,7 +67,8 @@ def cal_sum():
     data = request.get_json()
     a_val = float(dict(data)['a'])
     b_val = float(dict(data)['b'])
-    return jsonify(a_val,b_val) # now will use POSTMAN To read this API , IN url put /api vali puri URL
+    sum = a_val + b_val
+    return jsonify(sum) # now will use POSTMAN To read this API , IN url put /api vali puri URL
                                 # body - raw - json -> put simple json like test.json and go for it.
 
 if __name__ == "__main__":
