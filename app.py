@@ -44,7 +44,7 @@ def form():
         maths = float(request.form['maths']) #float as the incoming value is str, request.form['maths'] form me se maths name ki field ki value.
         science = float(request.form['science'])
         history = float(request.form['history'])
-
+        
         average = (maths+science+history)/3
 
         '''if average > 50:
